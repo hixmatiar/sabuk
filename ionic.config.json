@@ -1,0 +1,8 @@
+{
+  "name": "SABUK",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "28f39948"
+}
