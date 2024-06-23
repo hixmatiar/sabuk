@@ -1,0 +1,37 @@
+swiper-container {
+  width: 100%;
+  height: 200px;
+  margin-block-start: -24px;
+}
+swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+swiper-slide ion-card {
+  border-radius: 16px;
+  width: 100%;
+  height: 150px;
+  background-color: blue;
+}
+
+// title
+.title {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-inline-start: 8px;
+  margin-block-start: -8px;
+}
+.logo {
+  width: 32px;
+  height: 32px;
+  float: right;
+  margin-inline-end: 16px;
+}
+ion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+}

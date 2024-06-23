@@ -1,17 +1,38 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
+<ion-header>
+  <ion-title>SABUK</ion-title>
+  <ion-img
+    class="logo"
+    src="../../assets/DISHUB/Desain_tanpa_judul__1_-removebg-preview.svg"
+  ></ion-img>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-col>
+      <ion-row>
+        <h2 class="title">Keselamatan Berlalu Lintas</h2>
+        <!-- materi awal  -->
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+        <!-- slide materi  -->
+        <swiper-container
+          pagination="true"
+          pagination-dynamic-bullets="true"
+          [slidesPerView]="1"
+          slides-per-view="auto"
+          coverflow-effect-slide-shadows="false"
+          [loop]="true"
+          autoplay="true"
+          effect="coverflow"
+          class="container-swiper"
+        >
+          <swiper-slide>
+            <ion-card> </ion-card>
+          </swiper-slide>
+          <swiper-slide>
+            <ion-card> </ion-card>
+          </swiper-slide>
+        </swiper-container>
+      </ion-row>
+    </ion-col>
+  </ion-grid>
 </ion-content>
