@@ -10,7 +10,12 @@
   <ion-grid>
     <ion-col>
       <ion-row>
-        <h2 class="title">Keselamatan Berlalu Lintas</h2>
+        <ion-card class="card">
+          <ion-img src="../../assets/DISHUB/lintas (2).svg"></ion-img>
+        </ion-card>
+        <ion-card class="card">
+          <ion-img src="../../assets/DISHUB/lintas (1).svg"></ion-img>
+        </ion-card>
         <!-- materi awal  -->
 
         <!-- slide materi  -->
@@ -26,10 +31,109 @@
           class="container-swiper"
         >
           <swiper-slide>
-            <ion-card> </ion-card>
+            <ion-card>
+              <div class="aksen-flow">
+                <ion-img
+                  src="../../assets/DISHUB/logos (6).svg"
+                  class="card-img"
+                ></ion-img>
+              </div>
+              <div>
+                <h2 class="title-card">berkendara cerdas</h2>
+                <ion-button
+                  color="light"
+                  shape="round"
+                  [routerLink]="['/', 'tabs', 'berkendara']"
+                  class="button-card"
+                  >selengkapnya
+                  <ion-icon name="arrow-forward-circle" class="icon"></ion-icon
+                ></ion-button>
+              </div>
+            </ion-card>
           </swiper-slide>
           <swiper-slide>
-            <ion-card> </ion-card>
+            <ion-card>
+              <div class="aksen-flow">
+                <ion-img
+                  src="../../assets/DISHUB/logos (2).svg"
+                  class="card-img"
+                ></ion-img>
+              </div>
+              <div>
+                <h2 class="title-card">markah jalan</h2>
+                <ion-button
+                  color="light"
+                  shape="round"
+                  [routerLink]="['/', 'tabs', 'markah']"
+                  class="button-card"
+                  >selengkapnya
+                  <ion-icon name="arrow-forward-circle" class="icon"></ion-icon
+                ></ion-button>
+              </div>
+            </ion-card>
+          </swiper-slide>
+          <swiper-slide>
+            <ion-card>
+              <div class="aksen-flow">
+                <ion-img
+                  src="../../assets/DISHUB/logos (3).svg"
+                  class="card-img"
+                ></ion-img>
+              </div>
+              <div>
+                <h2 class="title-card">rambu lalu lintas</h2>
+                <ion-button
+                  color="light"
+                  shape="round"
+                  [routerLink]="['/', 'tabs', 'rambu']"
+                  class="button-card"
+                  >selengkapnya
+                  <ion-icon name="arrow-forward-circle" class="icon"></ion-icon
+                ></ion-button>
+              </div>
+            </ion-card>
+          </swiper-slide>
+          <swiper-slide>
+            <ion-card>
+              <div class="aksen-flow">
+                <ion-img
+                  src="../../assets/DISHUB/logos (4).svg"
+                  class="card-img"
+                ></ion-img>
+              </div>
+              <div>
+                <h2 class="title-card">pelanggaran</h2>
+                <ion-button
+                  color="light"
+                  shape="round"
+                  [routerLink]="['/', 'tabs', 'pelanggaran']"
+                  class="button-card"
+                  >selengkapnya
+                  <ion-icon name="arrow-forward-circle" class="icon"></ion-icon
+                ></ion-button>
+              </div>
+            </ion-card>
+          </swiper-slide>
+          <swiper-slide>
+            <ion-card>
+              <div class="aksen-flow">
+                <ion-img
+                  src="../../assets/DISHUB/logos (1).svg"
+                  class="card-img"
+                ></ion-img>
+              </div>
+              <div>
+                <h2 class="title-card">klasifikasi jalan</h2>
+                <ion-button
+                  color="light"
+                  shape="round"
+                  [routerLink]="['/', 'tabs', 'jalan']"
+                  class="button-card"
+                  >selengkapnya
+                  <ion-icon name="arrow-forward-circle" class="icon"></ion-icon
+                ></ion-button>
+              </div>
+            </ion-card>
           </swiper-slide>
         </swiper-container>
       </ion-row>

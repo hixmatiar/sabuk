@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
 
-const routes: Routes = [
+export const routes: Routes = [
   {
-    path: 'tabs',
+    path: '',
     component: TabsPage,
     children: [
       {
@@ -38,6 +38,59 @@ const routes: Routes = [
     path: '',
     redirectTo: '/tabs/tab1',
     pathMatch: 'full',
+  },
+  {
+    path: 'download',
+    loadChildren: () =>
+      import('../tab4/download/download.module').then(
+        (m) => m.DownloadPageModule
+      ),
+  },
+  {
+    path: 'glosarium',
+    loadChildren: () =>
+      import('../tab4/glosarium/glosarium.module').then(
+        (m) => m.GlosariumPageModule
+      ),
+  },
+  {
+    path: 'sim',
+    loadChildren: () =>
+      import('../tab2/sim/sim.module').then((m) => m.SimPageModule),
+  },
+  {
+    path: 'tips',
+    loadChildren: () =>
+      import('../tab2/tips/tips.module').then((m) => m.TipsPageModule),
+  },
+  {
+    path: 'berkendara',
+    loadChildren: () =>
+      import('../tab2/berkendara/berkendara.module').then(
+        (m) => m.BerkendaraPageModule
+      ),
+  },
+  {
+    path: 'jalan',
+    loadChildren: () =>
+      import('../tab2/jalan/jalan.module').then((m) => m.JalanPageModule),
+  },
+  {
+    path: 'markah',
+    loadChildren: () =>
+      import('../tab2/markah/markah.module').then((m) => m.MarkahPageModule),
+  },
+  {
+    path: 'rambu',
+    loadChildren: () =>
+      import('../tab2/rambu/rambu.module').then((m) => m.RambuPageModule),
+  },
+  {
+    path: 'pelanggaran',
+    loadChildren: () =>
+      import('../tab2/pelanggaran/pelanggaran.module').then(
+        (m) => m.PelanggaranPageModule
+      ),
   },
 ];
 

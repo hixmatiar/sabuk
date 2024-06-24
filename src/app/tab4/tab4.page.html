@@ -6,4 +6,58 @@
   ></ion-img>
 </ion-header>
 
-<ion-content> </ion-content>
+<ion-content>
+  <ion-grid>
+    <ion-col>
+      <ion-row>
+        <!-- gambar app -->
+        <div class="container">
+          <ion-img
+            src="../../assets/DISHUB/Desain_tanpa_judul__1_-removebg-preview.svg"
+          ></ion-img>
+        </div>
+
+        <!-- nama app  -->
+        <div class="container-content">
+          <ion-label>SABUK</ion-label>
+        </div>
+
+        <!-- button -->
+        <div class="container-button">
+          <ion-button
+            class="button-app"
+            shape="round"
+            [routerLink]="['/', 'tabs', 'glosarium']"
+            >Glosarium
+            <ion-icon name="arrow-forward-circle" class="icon"></ion-icon
+          ></ion-button>
+          <ion-button
+            class="button-app"
+            shape="round"
+            [routerLink]="['/', 'tabs', 'download']"
+            >Download
+            <ion-icon name="arrow-forward-circle" class="icon"></ion-icon
+          ></ion-button>
+        </div>
+
+        <!-- content -->
+        <ion-card class="card-content">
+          <h2>sabuk</h2>
+          <p>
+            Sistem aplikasi SABUK dirancang menggunakan teknologi terkini,
+            dengan sederhana, informatif dan menarik dengan disertai berbagai
+            fitur yang kaya akan informasi terkait pemahaman keselamatan berlalu
+            lintas, bagaimana aturan di jalan raya, bagaimana langkah yang tepat
+            agar terhindar dari kecelakaan di jalan raya, guna meningkatkan
+            pemahaman terkait keselematan berlalu lintass. Pengunaan aplikasi
+            SABUK dapat untuk meningkatkan kualitas, kecepatan pemahaman,
+            pendidikan keselamatan berlalu lintas. Pengunaan aplikasi SABUK juga
+            merupakan salah satu investasi pendidikan berkualitas yang dapat
+            berperan mengubah secara mendasar gaya hidup keselamatan berlalu
+            lintas masyarakat dalam jangka panjang.
+          </p>
+        </ion-card>
+      </ion-row>
+    </ion-col>
+  </ion-grid>
+</ion-content>

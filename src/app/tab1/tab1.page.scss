@@ -11,3 +11,28 @@ ion-header {
   width: 100%;
   height: 48px;
 }
+
+// materi
+.card-home {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 16px;
+  background-color: #f7f9f2;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.img-home {
+  width: 152px;
+  height: 152px;
+}
+
+// slide
+swiper-container {
+  width: 100%;
+  height: 230px;
+  margin-block-start: -24px;
+}
+swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

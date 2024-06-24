@@ -6,4 +6,65 @@
   ></ion-img>
 </ion-header>
 
-<ion-content> </ion-content>
+<ion-content>
+  <!-- grid -->
+  <ion-grid>
+    <ion-col>
+      <ion-row>
+        <swiper-container
+          pagination="true"
+          pagination-dynamic-bullets="true"
+          [slidesPerView]="2"
+          coverflow-effect-rotate="40"
+          coverflow-effect-stretch="20"
+          coverflow-effect-depth="50"
+          centered-slides="true"
+          coverflow-effect-slide-shadows="false"
+          [loop]="true"
+          autoplay="true"
+        >
+          <swiper-slide>
+            <ion-card class="card-home" href="tabs/tab2">
+              <div class="div-img">
+                <ion-img
+                  class="img-home"
+                  src="../../assets/DISHUB/lo.svg"
+                ></ion-img>
+              </div>
+            </ion-card>
+          </swiper-slide>
+          <swiper-slide>
+            <ion-card class="card-home" href="tabs/tab3">
+              <div class="div-img">
+                <ion-img
+                  class="img-home"
+                  src="../../assets/DISHUB/lo__1_-removebg-preview.svg"
+                ></ion-img>
+              </div>
+            </ion-card>
+          </swiper-slide>
+          <swiper-slide>
+            <ion-card class="card-home" href="tabs/tab4">
+              <div class="div-img">
+                <ion-img
+                  class="img-home"
+                  src="../../assets/DISHUB/Desain_tanpa_judul__1_-removebg-preview.svg"
+                ></ion-img>
+              </div>
+            </ion-card>
+          </swiper-slide>
+          <swiper-slide>
+            <ion-card class="card-home" [routerLink]="['/', 'tabs', 'sim']">
+              <div class="div-img">
+                <ion-img
+                  class="img-home"
+                  src="../../assets/DISHUB/lo__3_-removebg-preview.svg"
+                ></ion-img>
+              </div>
+            </ion-card>
+          </swiper-slide>
+        </swiper-container>
+      </ion-row>
+    </ion-col>
+  </ion-grid>
+</ion-content>

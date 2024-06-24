@@ -1,0 +1,55 @@
+ion-header ion-button {
+  width: fit-content;
+  height: fit-content;
+  margin-inline-start: 16px;
+  --background: red;
+  padding: 0;
+}
+ion-header ion-button ion-icon {
+  width: 24px;
+  height: 24px;
+}
+ion-header {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+}
+ion-header ion-title {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+// content
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-block-start: -8px;
+}
+.container-title p {
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 500;
+}
+.container-title {
+  width: 100%;
+  margin-inline: 16px;
+}
+.container {
+  width: 100%;
+  height: fit-content;
+  margin-inline-end: 24px;
+}
+.container ion-card {
+  width: 100%;
+  height: fit-content;
+  border-radius: 16px;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-block-end: 16px;
+}
+.container ion-card ion-img {
+  width: 100%;
+  height: 100%;
+}

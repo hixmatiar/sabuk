@@ -1,0 +1,42 @@
+ion-header ion-button {
+  width: fit-content;
+  height: fit-content;
+  margin-inline-start: 16px;
+  --background: red;
+  padding: 0;
+}
+ion-header ion-button ion-icon {
+  width: 24px;
+  height: 24px;
+}
+ion-header {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+}
+ion-header ion-title {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+// content
+ion-list {
+  width: 100%;
+  height: fit-content;
+}
+.list {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  padding-inline: 16px;
+}
+.list ion-label {
+  text-align: justify;
+  font-weight: 500;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-inline-end: 12px;
+}

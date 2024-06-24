@@ -1,0 +1,55 @@
+ion-header ion-button {
+  width: fit-content;
+  height: fit-content;
+  margin-inline-start: 16px;
+  --background: red;
+  padding: 0;
+}
+ion-header ion-button ion-icon {
+  width: 24px;
+  height: 24px;
+}
+ion-header {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+}
+ion-header ion-title {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+// content
+.card {
+  width: 100%;
+  height: fit-content;
+  padding-block-end: 8px;
+  border-radius: 16px;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card-img {
+  width: 128px;
+  height: 128px;
+}
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: black;
+}
+.card-btn {
+  --background: red;
+  width: 100%;
+  margin-inline: 16px;
+}
+.icon-btn {
+  padding-inline-start: 8px;
+}
+.cont {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}

@@ -12,16 +12,12 @@ swiper-slide ion-card {
   border-radius: 16px;
   width: 100%;
   height: 150px;
-  background-color: blue;
+  background-color: red;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
 }
 
 // title
-.title {
-  font-size: 20px;
-  text-transform: capitalize;
-  margin-inline-start: 8px;
-  margin-block-start: -8px;
-}
 .logo {
   width: 32px;
   height: 32px;
@@ -34,4 +30,36 @@ ion-header {
   align-items: center;
   width: 100%;
   height: 48px;
+}
+
+// content
+.card {
+  width: 100%;
+  height: fit-content;
+  border-radius: 16px;
+  margin-block-end: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.aksen-flow {
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+  border-radius: 16px;
+}
+.card-img {
+  width: 100%;
+  height: 100%;
+}
+.title-card {
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-inline-start: 12px;
+}
+.button-card {
+  margin-inline-start: 12px;
+  margin-block-start: 36px;
+}
+.icon {
+  padding-inline-start: 8px;
 }
