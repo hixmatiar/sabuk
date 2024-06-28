@@ -12,17 +12,25 @@
       Laporan
     </ion-button>
   </div>
+  <div class="container">
+    <input
+      type="file"
+      (change)="onFileChange($event)"
+      accept="image/*"
+      class="input"
+    />
+  </div>
   <ion-list>
     <ion-item-sliding *ngFor="let item of notes">
       <ion-item-options side="end">
         <ion-item-option
-          color="secondary"
+          style="--background: #6895d2"
           (click)="editNote(item)"
           class="fitur-app"
           >EDIT</ion-item-option
         >
         <ion-item-option
-          color="danger"
+          style="--background: #ff004d"
           (click)="deleteNote(item)"
           class="fitur-app"
           >DELETE</ion-item-option
@@ -31,7 +39,7 @@
 
       <ion-item>
         <ion-label class="font-title">
-          {{item?.title}}
+          {{item?.laporan}}
           <p class="font-desc">
             <ion-text class="ion-text-wrap"> {{item?.description}} </ion-text>
           </p>
@@ -64,9 +72,9 @@
               label="Laporan"
               labelPlacement="stacked"
               type="text"
-              name="title"
+              name="laporan"
               placeholder="Lapor"
-              [(ngModel)]="model.title"
+              [(ngModel)]="model.laporan"
             ></ion-input>
           </ion-item>
 
@@ -78,6 +86,17 @@
               name="description"
               placeholder="Lapor"
               [(ngModel)]="model.description"
+            ></ion-textarea>
+          </ion-item>
+
+          <ion-item class="ion-margin-vertical">
+            <ion-textarea
+              label="Keterangan Tempat"
+              labelPlacement="stacked"
+              type="text"
+              name="tempat"
+              placeholder="Lapor"
+              [(ngModel)]="model.tempat"
             ></ion-textarea>
           </ion-item>
         </form>

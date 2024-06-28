@@ -11,6 +11,7 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { Note, NoteService } from 'src/app/services/note/note.service';
 import { Subscription } from 'rxjs';
 import { Title } from '@angular/platform-browser';
+import { AngularFireStorage } from '@angular/fire/compat/storage';
 
 @Component({
   selector: 'app-tab3',
@@ -28,7 +29,8 @@ export class Tab3Page implements OnDestroy, OnInit {
   constructor(
     private note: NoteService,
     private alertCtrl: AlertController,
-    private modelCtrl: ModalController
+    private modelCtrl: ModalController,
+    private firestorage: AngularFireStorage
   ) {}
 
   ngOnInit(): void {
@@ -90,6 +92,16 @@ export class Tab3Page implements OnDestroy, OnInit {
       // this.model = { ...data };
     } catch (e) {
       console.log(e);
+    }
+  }
+
+  async onFileChange(event: any) {
+    const file = event.target.files[0];
+    if (file) {
+      const path = `lapor/${file.name}`;
+      const uploadTask = await this.firestorage.upload(path, file);
+      const url = await uploadTask.ref.getDownloadURL();
+      console.log(url);
     }
   }
 }

@@ -12,9 +12,10 @@ import {
 import { BehaviorSubject } from 'rxjs';
 
 export interface Note {
-  title: string;
+  laporan: string;
   description: string;
   id?: string;
+  tempat: string;
 }
 
 @Injectable({
@@ -31,7 +32,7 @@ export class NoteService {
 
   async addNote(data: Note) {
     try {
-      const dataRef: any = collection(this.firestore, 'notes');
+      const dataRef: any = collection(this.firestore, 'lapor');
       const response = await addDoc(dataRef, data);
       console.log(response);
       const id = await response?.id;
@@ -47,7 +48,7 @@ export class NoteService {
 
   async getNotes() {
     try {
-      const dataRef: any = collection(this.firestore, 'notes');
+      const dataRef: any = collection(this.firestore, 'lapor');
       const querySnapshot = await getDocs(dataRef);
       const notes: Note[] = await querySnapshot.docs.map((doc) => {
         let item: any = doc.data();
@@ -65,7 +66,7 @@ export class NoteService {
 
   async getNoteById(id: string) {
     try {
-      const dataRef: any = doc(this.firestore, `notes/${id}`);
+      const dataRef: any = doc(this.firestore, `lapor/${id}`);
       const docSnap = await getDoc(dataRef);
       if (docSnap.exists()) {
         // return docSnap.data() as Note;
@@ -83,7 +84,7 @@ export class NoteService {
 
   async updateNote(id: string, data: Note) {
     try {
-      const dataRef: any = doc(this.firestore, `notes/${id}`);
+      const dataRef: any = doc(this.firestore, `lapor/${id}`);
       await updateDoc(dataRef, data);
       let currentNotes = this._notes.value;
       const index = currentNotes.findIndex((x) => x.id == id);
@@ -98,7 +99,7 @@ export class NoteService {
 
   async deleteNote(id: string) {
     try {
-      const dataRef: any = doc(this.firestore, `notes/${id}`);
+      const dataRef: any = doc(this.firestore, `lapor/${id}`);
       await deleteDoc(dataRef);
       let currentNotes = this._notes.value;
       currentNotes = currentNotes.filter((x) => x.id != id);
