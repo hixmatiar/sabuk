@@ -21,6 +21,18 @@ ion-header ion-title {
 }
 
 // content
+.cont {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-title {
+  width: 80%;
+  height: 80%;
+}
+
 ion-list {
   width: 100%;
   height: fit-content;
@@ -47,7 +59,8 @@ ion-list {
 }
 
 ion-accordion {
-  margin: 0 auto;
+  margin-block-end: 16px;
+  border-radius: 16px;
 }
 
 ion-accordion.accordion-expanding,
@@ -65,6 +78,6 @@ ion-accordion.accordion-collapsed ion-item[slot="header"] {
 
 ion-accordion.accordion-expanding ion-item[slot="header"],
 ion-accordion.accordion-expanded ion-item[slot="header"] {
-  --background: #ff004d;
+  --background: #ffc700;
   --color: white;
 }

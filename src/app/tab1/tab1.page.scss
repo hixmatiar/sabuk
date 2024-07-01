@@ -39,12 +39,13 @@ swiper-slide {
 
 // content
 .card-content {
-  width: 100%;
+  width: 1000%;
   height: 150px;
   padding-block-start: 8px;
   background-color: transparent;
   border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-inline-end: 5%;
 }
 .aksen-card {
   background-color: #ff004d;
@@ -84,7 +85,7 @@ swiper-slide {
 }
 .btn-lanjut {
   float: right;
-  --background: #ff004d;
+  --background: #ffc700;
   margin-block-start: 8px;
   margin-inline-end: 8px;
 }

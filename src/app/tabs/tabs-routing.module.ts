@@ -92,6 +92,11 @@ export const routes: Routes = [
         (m) => m.PelanggaranPageModule
       ),
   },
+  {
+    path: 'telepon',
+    loadChildren: () =>
+      import('../tab1/telepon/telepon.module').then((m) => m.TeleponPageModule),
+  },
 ];
 
 @NgModule({

@@ -69,10 +69,10 @@
         <ion-card class="card-content" href="tabs/tab2">
           <div class="aksen-card">
             <ion-img
-              class="lintas-img"
-              src="../../assets/DISHUB/5-removebg-preview.svg"
+              class="lintas-img1"
+              src="../../assets/DISHUB/lo__7_-removebg-preview.svg"
             ></ion-img>
-            <h2 class="title-card">apa itu keselamatan berlalu lintas??</h2>
+            <h2 class="title-card1">apa itu keselamatan berlalu lintas??</h2>
           </div>
           <ion-button class="btn-lanjut"
             >selengkapnya
@@ -92,20 +92,7 @@
             <ion-icon name="arrow-forward-circle" class="icon"></ion-icon
           ></ion-button>
         </ion-card>
-        <ion-card class="card-content" href="tel:+62-110">
-          <div class="aksen-card">
-            <ion-img
-              class="lintas-img1"
-              src="../../assets/DISHUB/lo__4_-removebg-preview (2).svg"
-            ></ion-img>
-            <h2 class="title-card1">telefon darurat</h2>
-          </div>
-          <ion-button class="btn-lanjut"
-            >telefon
-            <ion-icon name="arrow-forward-circle" class="icon"></ion-icon
-          ></ion-button>
-        </ion-card>
-        <ion-card class="card-content" href="tel:+62-110">
+        <ion-card class="card-content" [routerLink]="['/', 'tabs', 'telepon']">
           <div class="aksen-card">
             <ion-img
               class="lintas-img1"
